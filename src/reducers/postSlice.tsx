@@ -23,7 +23,7 @@ const initialState: PostsState = {
     {
       id: 2,
       title: "Post 2",
-      content: "Content post 2",
+      content: "Content for post 2",
       picture: "src/post-Images\floral.jpg",
     },
   ],
