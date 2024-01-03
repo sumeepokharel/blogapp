@@ -1,5 +1,5 @@
 .postsContainer {
-  max-width: 800px;
+  max-width: 1000px;
   margin: auto;
   background-color: white;
 }
@@ -80,8 +80,8 @@
 }
 
 .comment {
-  margin-bottom: 8px;
-  padding: 8px;
+  margin-bottom: 10px;
+  padding: 10px;
   border: 1px solid #ddd;
   border-radius: 4px;
 }
@@ -112,4 +112,26 @@
 .profileSec {
   display: flex;
   align-items: center;
+}
+.loginContainer {
+  margin-left: 600px;
+  margin-top: 100px;
+}
+.input {
+  margin-bottom: 10px;
+  margin-left: 10px;
+  font-size: 15px;
+}
+.button {
+  font-size: 20px;
+  width: 75px;
+  height: 40px;
+  border: none;
+  background-color: palevioletred;
+  border-radius: 10px;
+  margin-left: 100px;
+  cursor: pointer;
+}
+.label {
+  font-size: 20px;
 }

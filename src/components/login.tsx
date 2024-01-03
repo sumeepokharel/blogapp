@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
+import styles from "./PostList.module.css";
 
 const LoginPage = () => {
   const [username, setUsername] = useState("");
@@ -17,7 +18,7 @@ const LoginPage = () => {
   }
   const handleLogin = async () => {
     try {
-      const response = await axios.get(".././../db.json");
+      const response = await axios.get("  http://localhost:3001");
       console.log("Server Response", response.data);
       const data = response.data;
 
@@ -39,12 +40,13 @@ const LoginPage = () => {
   };
 
   return (
-    <div>
-      <h2>Login Page</h2>
+    <div className={styles.loginContainer}>
+      <h2>Please Log in with your credentials</h2>
       <div>
-        <label>
+        <label className={styles.label}>
           Username:
           <input
+            className={styles.input}
             type="text"
             value={username}
             onChange={(e) => setUsername(e.target.value)}
@@ -52,16 +54,19 @@ const LoginPage = () => {
         </label>
       </div>
       <div>
-        <label>
+        <label className={styles.label}>
           Password:
           <input
+            className={styles.input}
             type="password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
           />
         </label>
       </div>
-      <button onClick={handleLogin}>Login</button>
+      <button onClick={handleLogin} className={styles.button}>
+        Login
+      </button>
       {error && <p style={{ color: "red" }}>{error}</p>}
     </div>
   );
