@@ -1,17 +1,28 @@
 {
+  "users": [
+    {
+      "id": 1,
+      "username": "Yuki",
+      "password": "123",
+      "profile": {
+        "name": "Yuki Baby 7",
+        "location": "Nepal",
+        "education": "S.L.C"
+      }
+    }
+  ],
   "posts": [
     {
       "id": 1,
       "title": "My Flower",
       "content": "This is content for post 1",
-      "author": "Author 1 Mike",
+      "author": "Mike",
       "picture": "/postImages/floral.jpg",
       "likes": 1000,
       "loves": 500,
-
       "date": "2023-01-03",
       "time": "12:15 pm",
-      "profilePic": "/postImages/profilePic.png",
+      "profilePic": "/postImages/pic.jpg",
       "comments": [
         {
           "id": 201,
@@ -22,7 +33,6 @@
         }
       ]
     },
-
     {
       "id": 2,
       "title": "Sunset View",
@@ -43,13 +53,6 @@
       ],
       "date": "2023-01-05",
       "time": "17:45:00"
-    }
-  ],
-  "profile": [
-    {
-      "name": "Yuki Baby 7",
-      "Location": "Nepal",
-      "Education": "S.L.C"
     }
   ]
 }

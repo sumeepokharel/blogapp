@@ -20,7 +20,6 @@ const CommentForm = ({ postId }: { postId: number }) => {
 
   return (
     <div className={styles.commentFormContainer}>
-      <h4 className={styles.commentHeading}>Comments</h4>
       <ul className={styles.commentsList}>
         {comments
           .filter((comment) => comment.postId === postId)

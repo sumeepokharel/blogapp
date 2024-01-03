@@ -54,18 +54,20 @@ const PostList = () => {
         <div key={post.id} className={styles.postEdit}>
           {/* Post Details */}
           <div key={post.id} className={styles.post}>
-            {post.profilePic && (
-              <img
-                src={post.profilePic}
-                alt={`Post by ${post.author}`}
-                className={styles.postImage}
-              />
-            )}
-            <div className={styles.postHeader}>
-              <h3 className={styles.postAuthor}>{post.author}</h3>
-              <p className={styles.dateTime}>
-                {post.date} , {post.time}
-              </p>
+            <div className={styles.profileSec}>
+              {post.profilePic && (
+                <img
+                  src={post.profilePic}
+                  alt={`${post.author}`}
+                  className={styles.profilePic}
+                />
+              )}
+              <div className={styles.postHeader}>
+                <h3 className={styles.postAuthor}>{post.author}</h3>
+                <p className={styles.dateTime}>
+                  {post.date} , {post.time}
+                </p>
+              </div>
             </div>
             <p className={styles.postContent}>
               {post.content}{" "}

@@ -1,7 +1,11 @@
-import React from "react";
+import React from 'react'
 
 function Photos() {
-  return <div>Photos</div>;
+  return (
+    <div>
+      <
+    </div>
+  )
 }
 
-export default Photos;
+export default Photos

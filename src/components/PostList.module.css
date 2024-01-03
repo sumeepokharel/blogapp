@@ -104,3 +104,12 @@
   font-size: 13px;
   color: grey;
 }
+.profilePic {
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+}
+.profileSec {
+  display: flex;
+  align-items: center;
+}
