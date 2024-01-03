@@ -173,5 +173,5 @@
       "Education": "S.L.C"
     }
   ],
-  "users": [{ "username": "Yuki", "password": 1234 }]
+  "users": [{ "username": "Yuki", "password": "1234" }]
 }

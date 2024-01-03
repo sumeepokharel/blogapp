@@ -2,34 +2,37 @@ import React, { useState } from "react";
 import axios from "axios";
 import styles from "./PostList.module.css";
 
-const LoginPage = () => {
-  const [username, setUsername] = useState("");
-  const [password, setPassword] = useState("");
-  const [error, setError] = useState("");
-  interface User {
-    id: number;
-    username: string;
-    password: string;
-    profile: {
-      name: string;
-      location: string;
-      education: string;
-    };
-  }
+interface User {
+  id: number;
+  username: string;
+  password: string;
+  profile: {
+    name: string;
+    location: string;
+    education: string;
+  };
+}
+
+const LoginPage: React.FC = () => {
+  const [username, setUsername] = useState<string>("");
+  const [password, setPassword] = useState<string>("");
+  const [error, setError] = useState<string>("");
+  const [isLoggedIn, setLoggedIn] = useState<boolean>(false);
+
   const handleLogin = async () => {
     try {
-      const response = await axios.get("  http://localhost:3001");
+      const response = await axios.get<User[]>("http://localhost:3001/users");
       console.log("Server Response", response.data);
       const data = response.data;
 
-      const user = data.users.find(
+      const user = data.find(
         (u: User) => u.username === username && u.password === password
       );
 
       if (user) {
-        // Authentication successful, you can redirect or set a token here
         console.log("Login successful", user);
         setError("");
+        setLoggedIn(true);
       } else {
         setError("Invalid username or password");
       }
@@ -68,6 +71,7 @@ const LoginPage = () => {
         Login
       </button>
       {error && <p style={{ color: "red" }}>{error}</p>}
+      {isLoggedIn && <p style={{ color: "green" }}>Login successful!</p>}
     </div>
   );
 };
