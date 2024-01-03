@@ -1,54 +1,86 @@
 .postsContainer {
-  background-color: #838796;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
+  max-width: 800px;
+  margin: auto;
+  background-color: white;
 }
 
-.postContainer {
-  width: 100%;
-  max-width: 600px;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  overflow: hidden;
-  background-color: #fff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  transition: transform 0.2s ease-in-out;
-  margin-bottom: 20px;
+.feedTitle {
+  font-size: 24px;
+  color: #eb0a46;
+  text-align: center;
+}
+.postImage {
+  max-width: 100%;
+  height: auto;
 }
 
-.postContainer:hover {
-  transform: translateY(-5px);
+.post {
+  border: 1px solid #c4a2a2;
+  padding: 16px;
+  margin-bottom: 16px;
 }
 
 .postHeader {
-  padding: 15px;
-  background-color: #353834;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.postTitle {
-  font-size: 20px;
-  color: #f5ebeb;
-  margin: 0;
+.postAuthor {
+  font-size: 18px;
+  margin-right: 8px;
+}
+
+.postDate {
+  font-size: 14px;
+  color: #1c0303;
 }
 
 .postContent {
-  color: #171515;
-  margin: 10px 15px;
+  color: #555;
+  margin-bottom: 12px;
 }
 
-.commentContainer {
-  padding: 15px;
-  background-color: #9ba5b1;
+.postInfo {
+  margin-top: 8px;
+  color: #777;
+}
+
+.postActions {
+  margin-top: 8px;
+}
+
+.likeButton,
+.loveButton,
+.deleteButton {
+  padding: 5px 10px;
+  margin-right: 10px;
+  cursor: pointer;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  font-size: 0.9em;
+}
+.loveButton {
+  background-color: #f51616;
+}
+.deleteButton {
+  background-color: rgba(209, 39, 39, 0.804);
+}
+.likeIcon,
+.loveIcon {
+  margin-right: 5px;
+}
+
+.commentsList {
+  list-style: none;
+  padding: 0;
 }
 
 .comment {
-  margin-bottom: 10px;
-  color: #150808;
-}
-
-.comment:last-child {
-  margin-bottom: 0;
+  margin-bottom: 8px;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
 }
