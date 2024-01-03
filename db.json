@@ -1,28 +1,16 @@
 {
-  "users": [
-    {
-      "id": 1,
-      "username": "Yuki",
-      "password": "123",
-      "profile": {
-        "name": "Yuki Baby 7",
-        "location": "Nepal",
-        "education": "S.L.C"
-      }
-    }
-  ],
   "posts": [
     {
       "id": 1,
       "title": "My Flower",
-      "content": "This is content for post 1",
-      "author": "Mike",
+      "content": "Beautiful flower",
+      "author": "Author 1 Mike",
       "picture": "/postImages/floral.jpg",
       "likes": 1000,
       "loves": 500,
       "date": "2023-01-03",
       "time": "12:15 pm",
-      "profilePic": "/postImages/pic.jpg",
+      "profilePic": "/postImages/profilePic.png",
       "comments": [
         {
           "id": 201,
@@ -38,6 +26,7 @@
       "title": "Sunset View",
       "content": "Enjoying a beautiful sunset",
       "author": "Author 2 Sarah",
+      "picture": "/postImages/sunset.png",
       "likes": 800,
       "loves": 600,
       "link": "https://linkedinheaders.com/tag/flowers/",
@@ -53,6 +42,135 @@
       ],
       "date": "2023-01-05",
       "time": "17:45:00"
+    },
+    {
+      "id": 3,
+      "content": "Feeling Happy",
+      "status": "Feeling happy today!",
+      "author": "Author 3 Emma",
+      "picture": "/postImages/happy.png",
+      "likes": 300,
+      "loves": 200,
+      "date": "2023-01-06",
+      "time": "10:30 am",
+      "profilePic": "/postImages/profilePic.png",
+      "comments": [
+        {
+          "id": 202,
+          "text": "Great to hear!",
+          "user": "User456",
+          "date": "2023-01-06",
+          "time": "11:00 am"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "content": "Thinking about my future plans and setting new goals. Exciting times ahead!",
+      "author": "Author 4 Alex",
+      "likes": 400,
+      "loves": 250,
+      "date": "2023-01-07",
+      "time": "3:45 pm",
+      "profilePic": "/postImages/pic.jpg",
+      "comments": [
+        {
+          "id": 203,
+          "text": "Exciting times ahead!",
+          "user": "User123",
+          "date": "2023-01-07",
+          "time": "4:30 pm"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Snowy Day",
+      "content": "Walking in a winter wonderland",
+      "author": "Author 5 Chris",
+      "picture": "/postImages/snow.png",
+      "likes": 600,
+      "loves": 400,
+      "date": "2023-01-08",
+      "time": "1:20 pm",
+      "profilePic": "/postImages/snow.png",
+      "comments": [
+        {
+          "id": 204,
+          "text": "Magical!",
+          "user": "User789",
+          "date": "2023-01-08",
+          "time": "2:00 pm"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "content": "Feeling grateful for all the blessings in life.",
+      "picture": "/postImages/flower.png",
+      "author": "Author 6 Olivia",
+      "likes": 700,
+      "loves": 300,
+      "date": "2023-01-10",
+      "time": "8:45 am",
+      "profilePic": "/postImages/profilePic.png",
+      "comments": [
+        {
+          "id": 205,
+          "text": "A wonderful outlook!",
+          "user": "User789",
+          "date": "2023-01-10",
+          "time": "9:30 am"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "title": "City Lights",
+      "content": "Exploring the city at night",
+      "author": "Author 7 Daniel",
+      "picture": "/postImages/night.png",
+      "likes": 1200,
+      "loves": 800,
+      "date": "2023-01-12",
+      "time": "7:00 pm",
+      "profilePic": "/postImages/night.png",
+      "comments": [
+        {
+          "id": 206,
+          "text": "Breathtaking views!",
+          "user": "User456",
+          "date": "2023-01-12",
+          "time": "8:00 pm"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "content": "Ready for a new adventure!",
+      "author": "Author 8 Liam",
+      "picture": "/postImages/journey.png",
+      "likes": 500,
+      "loves": 350,
+      "date": "2023-01-15",
+      "time": "11:30 am",
+      "profilePic": "/postImages/profilePic.png",
+      "comments": [
+        {
+          "id": 207,
+          "text": "Best of luck on your journey!",
+          "user": "User123",
+          "date": "2023-01-15",
+          "time": "12:00 pm"
+        }
+      ]
+    }
+  ],
+  "profile": [
+    {
+      "name": "Yuki Baby 7",
+      "Location": "Nepal",
+      "Education": "S.L.C"
     }
   ]
 }
