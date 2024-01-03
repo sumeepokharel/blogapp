@@ -2,18 +2,29 @@
   "posts": [
     {
       "id": 1,
-      "title": "json-server",
-      "author": "typicode"
+      "title": "My flower",
+      "content": "This is Content for post 1",
+      "author": "Author 1 Mike",
+      "picture": "/postImages/floral.jpg"
+    },
+    {
+      "id": 1,
+      "title": "Beautiful Flower",
+      "content": "Picture Description goes here",
+      "author": "Author 2 Sumee",
+      "picture": "/postImages/floral.jpg"
     }
   ],
   "comments": [
-    {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
-    }
+    { "id": 1, "postId": 1, "text": "Comment 1 for Post 1" },
+    { "id": 2, "postId": 1, "text": "Comment 2 for Post 1" },
+    { "id": 3, "postId": 2, "text": "Comment 1 for Post 2" }
   ],
-  "profile": {
-    "name": "typicode"
-  }
+  "profile": [
+    {
+      "name": "Yuki Baby 7",
+      "Location": "Nepal",
+      "Education": "S.L.C"
+    }
+  ]
 }

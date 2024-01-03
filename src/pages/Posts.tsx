@@ -5,11 +5,11 @@ import store from "../store/store";
 
 function posts() {
   return (
-    <div>
-      <Provider store={store}>
+    <Provider store={store}>
+      <div>
         <PostList />
-      </Provider>
-    </div>
+      </div>
+    </Provider>
   );
 }
 

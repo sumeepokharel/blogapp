@@ -23,3 +23,11 @@
   font-style: italic;
   color: #555;
 }
+
+.postPic {
+  height: 100px;
+  width: 100px;
+}
+.postEdit {
+  margin-left: 20px;
+}
