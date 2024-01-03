@@ -1,5 +1,4 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
-import data from "../api/db.json";
 
 interface Comment {
   id: number;
@@ -19,8 +18,17 @@ const commentsSlice = createSlice({
   name: "comments",
   initialState,
   reducers: {
-    addComment: (state, action: PayloadAction<Comment>) => {
-      state.comments.push(action.payload);
+    addComment: (
+      state,
+      action: PayloadAction<{ postId: number; text: string }>
+    ) => {
+      const { postId, text } = action.payload;
+      const newComment: Comment = {
+        id: state.comments.length + 1,
+        postId,
+        text,
+      };
+      state.comments.push(newComment);
     },
   },
 });

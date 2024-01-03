@@ -1,3 +1,4 @@
+// Import necessary dependencies and components
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import {
@@ -8,7 +9,9 @@ import {
 } from "../reducers/postSlice";
 import styles from "./PostList.module.css";
 import { FaThumbsUp, FaHeart } from "react-icons/fa";
+import CommentForm from "./CommentForm";
 
+// Define the PostList component
 const PostList = () => {
   const dispatch = useDispatch();
   const posts = useSelector(selectPosts);
@@ -82,10 +85,13 @@ const PostList = () => {
               </li>
             ))}
           </ul>
+          <CommentForm postId={post.id} />{" "}
+          {/* Render the CommentForm component */}
         </div>
       ))}
     </div>
   );
 };
 
+// Export the PostList component
 export default PostList;
