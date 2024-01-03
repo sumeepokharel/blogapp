@@ -65,7 +65,7 @@ const About: React.FC = () => {
             href="https://www.instagram.com/pokharel_sumee/"
             className={styles.link}
           >
-            Instagram
+            Instragram
           </a>
         </div>
       </div>
