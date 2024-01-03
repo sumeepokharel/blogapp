@@ -1,27 +1,88 @@
-.postContainer {
-  border: 1px solid #ccc;
-  margin: 1rem 0;
-  padding: 1rem;
+.postsContainer {
+  max-width: 800px;
+  margin: auto;
+  background-color: white;
 }
 
-.postTitle {
-  font-size: 1.5rem;
-  margin-bottom: 0.5rem;
+.feedTitle {
+  font-size: 24px;
+  color: #eb0a46;
+  text-align: center;
+}
+.postImage {
+  max-width: 100%;
+  height: auto;
+}
+
+.post {
+  border: 1px solid #c4a2a2;
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+.postHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.postAuthor {
+  font-size: 18px;
+  margin-right: 8px;
+}
+
+.postDate {
+  font-size: 14px;
+  color: #1c0303;
 }
 
 .postContent {
-  margin-bottom: 1rem;
-}
-
-.commentContainer {
-  margin-top: 1rem;
-  border-top: 1px solid #ccc;
-  padding-top: 1rem;
-}
-
-.commentText {
-  font-style: italic;
   color: #555;
+  margin-bottom: 12px;
+}
+
+.postInfo {
+  margin-top: 8px;
+  color: #777;
+}
+
+.postActions {
+  margin-top: 8px;
+}
+
+.likeButton,
+.loveButton,
+.deleteButton {
+  padding: 5px 10px;
+  margin-right: 10px;
+  cursor: pointer;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  font-size: 0.9em;
+}
+.loveButton {
+  background-color: #f51616;
+}
+.deleteButton {
+  background-color: rgba(209, 39, 39, 0.804);
+}
+.likeIcon,
+.loveIcon {
+  margin-right: 5px;
+}
+
+.commentsList {
+  list-style: none;
+  padding: 0;
+}
+
+.comment {
+  margin-bottom: 8px;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
 }
 
 .postPic {
