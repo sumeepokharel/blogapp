@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import { configureStore, ThunkAction, Action } from "@reduxjs/toolkit";
 import rootReducer, { RootState } from "../reducers/rootReducer";
 //import thunk, { ThunkMiddleware as ReduxThunkMiddleware } from "redux-thunk";
@@ -14,10 +13,6 @@ export type ThunkMiddleware = Middleware<
   ThunkDispatch<RootState, undefined, ReduxAction<string>>,
   RootState
 >;
-=======
-import { configureStore } from "@reduxjs/toolkit";
-import rootReducer from "../reducers/rootReducer";
->>>>>>> aa4b9aeadfcafd97002a94d59a6d3c01a3a5aa0d
 
 const store = configureStore({
   reducer: rootReducer,

@@ -1,10 +1,7 @@
-<<<<<<< HEAD
 import { createSlice, createAsyncThunk, PayloadAction } from "@reduxjs/toolkit";
-=======
-import { createSlice, PayloadAction } from "@reduxjs/toolkit";
+
 import image from "../post-Images/floral.jpg";
 import image1 from "../post-Images/hills.png";
->>>>>>> aa4b9aeadfcafd97002a94d59a6d3c01a3a5aa0d
 
 const BASE_URL = "http://localhost:3001";
 interface Post {
@@ -12,19 +9,18 @@ interface Post {
   title: string;
   content: string;
   author: string;
-<<<<<<< HEAD
-=======
   likes: number;
   loves: number;
   link?: string;
   dislikes: number;
->>>>>>> aa4b9aeadfcafd97002a94d59a6d3c01a3a5aa0d
   picture?: string;
   comments: Comment[];
   date: string;
+  time: string;
+  profilePic: string;
 }
 
-interface Comment {
+export interface Comment {
   id: number;
   text: string;
 }
@@ -33,37 +29,7 @@ interface PostsState {
 }
 
 const initialState: PostsState = {
-<<<<<<< HEAD
   posts: [],
-=======
-  posts: [
-    {
-      id: 1,
-      title: "Post 1",
-      content: "I found this interesting article about flowers",
-      author: "james Martin",
-      link: "https://linkedinheaders.com/tag/flowers/",
-      likes: 1000,
-      loves: 500,
-      dislikes: 100,
-      picture: image,
-      comments: [],
-      date: new Date().toISOString(),
-    },
-    {
-      id: 2,
-      title: "Post 2",
-      content: "Check out this amazing picture!",
-      author: "Robert",
-      likes: 100,
-      loves: 20,
-      dislikes: 1,
-      picture: image1,
-      comments: [],
-      date: new Date().toISOString(),
-    },
-  ],
->>>>>>> aa4b9aeadfcafd97002a94d59a6d3c01a3a5aa0d
 };
 
 export const fetchPosts = createAsyncThunk("posts/fetchPosts", async () => {

@@ -29,6 +29,7 @@
 .postAuthor {
   font-size: 18px;
   margin-right: 8px;
+  position: absolute;
 }
 
 .postDate {
@@ -91,4 +92,15 @@
 }
 .postEdit {
   margin-left: 20px;
+}
+
+.list {
+  list-style-type: none;
+}
+.dateTime {
+  position: relative;
+  left: 0px;
+  top: 20px;
+  font-size: 13px;
+  color: grey;
 }

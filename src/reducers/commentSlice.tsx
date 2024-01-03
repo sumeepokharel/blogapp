@@ -1,10 +1,6 @@
-<<<<<<< HEAD
 import { createSlice, createAsyncThunk, PayloadAction } from "@reduxjs/toolkit";
 
 const BASE_URL = "http://localhost:3001";
-=======
-import { createSlice, PayloadAction } from "@reduxjs/toolkit";
->>>>>>> aa4b9aeadfcafd97002a94d59a6d3c01a3a5aa0d
 
 interface Comment {
   id: number;
@@ -33,7 +29,6 @@ const commentsSlice = createSlice({
   name: "comments",
   initialState,
   reducers: {
-<<<<<<< HEAD
     addComment: (state, action: PayloadAction<Omit<Comment, "id">>) => {
       // Generate a unique id for the new comment
       const newId = state.comments.length + 1;
@@ -45,18 +40,6 @@ const commentsSlice = createSlice({
       };
 
       // Push the new comment to the state
-=======
-    addComment: (
-      state,
-      action: PayloadAction<{ postId: number; text: string }>
-    ) => {
-      const { postId, text } = action.payload;
-      const newComment: Comment = {
-        id: state.comments.length + 1,
-        postId,
-        text,
-      };
->>>>>>> aa4b9aeadfcafd97002a94d59a6d3c01a3a5aa0d
       state.comments.push(newComment);
     },
   },
