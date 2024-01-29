@@ -2,7 +2,7 @@ body {
   font-family: "Arial", sans-serif;
   margin: 0;
   padding: 0;
-  background-color: hwb(0 96% 2%);
+  background-color: hwb(0 86% 11%);
 }
 
 .aboutContainer {
@@ -13,7 +13,7 @@ body {
 }
 
 .aboutContent {
-  background-color: hwb(0 46% 53%);
+  background-color: hwb(0 70% 19%);
   border-radius: 20px;
   box-shadow: 0 10 10px rgba(106, 104, 104, 0.1);
   padding: 20px;

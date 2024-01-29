@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
-import styles from "./PostList.module.css";
+import { useNavigate } from "react-router-dom";
+import styles from "../components/PostList.module.css";
 
 interface User {
   id: number;
@@ -19,6 +20,8 @@ const LoginPage: React.FC = () => {
   const [error, setError] = useState<string>("");
   const [isLoggedIn, setLoggedIn] = useState<boolean>(false);
 
+  const navigate = useNavigate(); // Create navigate function for navigation
+
   const handleLogin = async () => {
     try {
       const response = await axios.get<User[]>("http://localhost:3001/users");
@@ -33,6 +36,8 @@ const LoginPage: React.FC = () => {
         console.log("Login successful", user);
         setError("");
         setLoggedIn(true);
+
+        navigate("/Posts");
       } else {
         setError("Invalid username or password");
       }

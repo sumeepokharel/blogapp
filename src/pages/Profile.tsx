@@ -1,5 +1,5 @@
 import React from "react";
-import LoginPage from "../components/login";
+import LoginPage from "./login";
 
 function Profile() {
   return (

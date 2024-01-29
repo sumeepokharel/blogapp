@@ -44,7 +44,6 @@ const About: React.FC = () => {
         <p className={styles.aboutDescription}>
           Let's work together and build something amazing!
         </p>
-
         <div className={styles.linksContainer}>
           <a
             href="https://sumitraportfolio-jlx5431en-sumeepokharel.vercel.app"
