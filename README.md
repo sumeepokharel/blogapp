@@ -1,10 +1,4 @@
-<head>
-
-    <title>Blog-App</title>
-
-</head>
-
-<body>
+  <h1>Blog-App</h1>
 
     <h1>Blog-App</h1>
 
@@ -66,13 +60,12 @@
     </ul>
 
     <h2>Screenshots</h2>
-    <img src="public/screenshots/pic1.png" alt="Screenshot 1">
-    <img src="public/screenshots/pic2.png" alt="Screenshot 2">
+
+   <img src="public/screenshots/pic1.png" alt="Screenshot 1">
+<img src="public/screenshots/pic2.png" alt="Screenshot 2">
 
     <h2>Contributing</h2>
     <p>Contributions to this project are welcome. If you find any bugs or have suggestions for improvement, please open an issue or create a pull request.</p>
 
     <h2>License</h2>
     <p>This project is licensed under the MIT License.</p>
-
-</body>
