@@ -1,8 +1,5 @@
   <h1>Blog-App</h1>
 
-    <h1>Blog-App</h1>
-
-    <h2>Blog App Project</h2>
     <p>Welcome to the documentation for the Blog Application. This documentation provides a comprehensive guide for developers on setting up, developing, and customizing the application.</p>
 
     <h2>Purpose</h2>
@@ -22,7 +19,8 @@
     <h3>Prerequisites</h3>
     <ul>
         <li><strong>VSCode Clone:</strong>
-            <p>Set up a VSCode clone on your machine. You can find the official repository and installation instructions [here](link-to-your-VSCode-clone).</p>
+          <li><strong>VSCode Clone:</strong> Set up a VSCode clone on your machine. You can find the official repository and installation instructions [here](https://github.com/sumeepokharel/blogapp.git).</li>
+
         </li>
         <li><strong>Node.js and npm:</strong>
             <p>Ensure Node.js is installed on your machine. You can download and install Node.js from the [official website](https://nodejs.org/).</p>
@@ -32,32 +30,28 @@
     <h3>Installation steps</h3>
 
     <h3>1. Clone the repository:</h3>
-    <pre>
-        <code>
-            git clone https://github.com/sumeepokharel/blogapp.git
-        </code>
-    </pre>
+    <p> git clone </p><a> https://github.com/sumeepokharel/blogapp.git</a>
+
 
     <h3>2. Install the dependencies:</h3>
-    <pre>
-        <code>
-            npm install
-        </code>
-    </pre>
+
+            <p>npm install</p>
+
 
     <h3>3. Start the React development server:</h3>
-    <pre>
-        <code>
-            npm run start
-        </code>
-    </pre>
+
+           <p> npm run start</p>
+
+ <h4>To run json server </h4>
+           <p> npm run server</p>
 
     <h2>Usage</h2>
     <ul>
-        <li>Open your browser and go to http://localhost:3000 to access the website.</li>
-        <li>Explore blog posts, like, comment, and react to photos.</li>
-        <li>Customize and manage your blog content.</li>
-    </ul>
+    <li>Open your browser and go to <a href="http://localhost:3000">http://localhost:3000</a> to access the website.</li>
+    <li>Explore blog posts, like, comment, and react to photos.</li>
+    <li>Customize and manage your blog content.</li>
+
+</ul>
 
     <h2>Screenshots</h2>
 
